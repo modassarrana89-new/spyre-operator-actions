@@ -23,6 +23,6 @@ jobs:
           oc login "${{ secrets.SNO_API_SERVER }}" \
             --token="${{ secrets.SNO_SA_TOKEN }}" \
             --insecure-skip-tls-verify=false
-           echo "Successfully logged in to SNO cluster"
-           oc whoami  
+          echo "Successfully logged in to SNO cluster"
+          oc whoami  
           oc project e2e-tests
